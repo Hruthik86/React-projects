@@ -1,11 +1,17 @@
 import React from 'react'
-import Form from './components/form/Form'
+import Accordion from './components/Accordion/Accordion'
+import { accordionData } from './components/Accordion/content'
+
 
 
 const App = () => {
   return (
     <div>
-      <Form/>
+      <div className='accordian'>
+        {accordionData.map(({ title, content})=>(
+          <Accordion title={title} content={content}/>
+        ))}
+      </div>
     </div>
   )
 }
