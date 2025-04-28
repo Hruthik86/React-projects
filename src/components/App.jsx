@@ -2,6 +2,7 @@ import React from 'react'
 import Accordion from './Accordion/Accordion'
 import { accordionData } from './Accordion/content'
 import HiddenSearchBar from './HiddenSearchbar/HiddenSearchBar'
+import MemoryGame from './Memory Game/MemoryGame'
 
 
 
@@ -12,7 +13,8 @@ const App = () => {
         {accordionData.map(({ title, content})=>(
           <Accordion title={title} content={content}/>
         ))} */}
-        <HiddenSearchBar/>
+        {/* <HiddenSearchBar/> */}
+        <MemoryGame/> 
       </div>
     
   )
